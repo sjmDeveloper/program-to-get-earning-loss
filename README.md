@@ -1,29 +1,64 @@
 # Project Expense & Loss Calculator
 
-## 1. Overview
-A desktop application built with C++ and Qt to calculate project expenses and financial losses.
+## 1. About the Project
+A desktop application built with C++ and Qt6 to calculate project expenses and financial losses accurately.
 
-## 2. Purpose
-I created this project to apply my knowledge of the **Qt framework**, as it provides superior tools and widgets for building business-oriented graphical user interfaces (GUIs) compared to multimedia libraries like SFML.
+## 2. Motivation & Features
+* **Motivation:** Built to apply practical knowledge of the **Qt framework**, leveraging its native widgets and layout tools to create clean, business-oriented graphical user interfaces (GUIs).
+* **Key Features:**
+  * **Expense & Loss Tracking:** Calculates total project expenses and net financial losses.
+  * **Business-Oriented GUI:** Clean, structured desktop interface built with Qt6.
 
-## 3. How to Build and Run
+## 3. Prerequisites & Installation
+Before building and running the application, ensure you have **Qt6**, **CMake**, and a C++ compiler installed:
 
-### Prerequisites
-* Make sure **CMake** and a C++ compiler are installed on your system.
-* Ensure **Qt** development libraries are properly configured.
+### Linux
+* **Ubuntu / Debian / Mint:**
+  ```bash
+  sudo apt-get update && sudo apt-get install qt6-base-dev cmake build-essential
+  ```
+* **Fedora / RHEL / CentOS:**
+  ```bash
+  sudo dnf install qt6-qtbase-devel cmake gcc-c++
+  ```
+* **Arch Linux / Manjaro:**
+  ```bash
+  sudo pacman -S qt6-base cmake base-devel
+  ```
+* **openSUSE:**
+  ```bash
+  sudo zypper install qt6-base-devel cmake gcc-c++
+  ```
+* **Alpine Linux:**
+  ```bash
+  sudo apk add qt6-qtbase-dev cmake build-base
+  ```
+* **Other Distributions:** Install via the [Official Qt Online Installer](https://qt.io) or your distribution's package manager.
 
-### Build Instructions
-Open Command Prompt (CMD) on Windows or Terminal on Linux, and run the following commands:
+### Windows
+Download and install **Qt6** (along with MinGW and CMake) from the [Official Qt Download Page](https://qt.io).
 
+## 4. Build & Run
+
+### 1. Clone & Build
+Open your Terminal (Linux) or Command Prompt (Windows) and run:
 ```bash
-cd /path/to/your/project
-mkdir build
-cd build
+git clone https://github.com
+cd YOUR_REPO_NAME
+mkdir build && cd build
 cmake ..
-make
-./economy
+cmake --build .
 ```
 
-## 4. Features
-* Calculates total project expenses and net losses for business tracking.
-* Clean graphical user interface built with Qt.
+### 2. Run the Application
+* **On Linux:**
+  ```bash
+  ./economy
+  ```
+* **On Windows (CMD):**
+  ```cmd
+  economy.exe
+  ```
+
+## 5. Version
+`1.0.0`
